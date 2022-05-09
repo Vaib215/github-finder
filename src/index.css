@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@keyframes spinner {
+    100% {
+      transform: rotate(3600deg);
+    }
+  }
+  
+  .loading-container {
+    margin: auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .spinner {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: url('https://i.imgur.com/5r3ox4q.png') center center;
+    background-size: contain;
+    animation: spinner 4s infinite alternate ease-in-out;
+  }
+  
+  .loading-text {
+    position: relative;
+    z-index: 1;
+    font-size: 1.5rem;
+    margin-left: 0.5em;
+  }
