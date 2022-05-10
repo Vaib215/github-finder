@@ -1,5 +1,5 @@
 {
- "name": "App",
+ "name": "Github Finder",
  "icons": [
   {
    "src": "\/android-icon-36x36.png",
@@ -37,5 +37,10 @@
    "type": "image\/png",
    "density": "4.0"
   }
- ]
+ ],
+ "name": "An app for finding users on github.",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
 }
