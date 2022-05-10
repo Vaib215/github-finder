@@ -1,13 +1,10 @@
-import React, { useEffect, useContext } from 'react'
+import React, { useContext } from 'react'
 import GithubContext from '../../context/github/GithubContext'
 import Spinner from '../layout/Spinner'
 import UserItem from './UserItem'
 
 function UserResults() {
-    const {users,loading,fetchUsers} = useContext(GithubContext)
-    useEffect(() => {
-        fetchUsers()
-    }, [])
+    const {users,loading} = useContext(GithubContext)
     if (!loading) {
         return (
             <div className="grid grid-cols-1 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-8">
