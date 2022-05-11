@@ -6,6 +6,7 @@ import { GithubProvider } from './context/github/GithubContext'
 import About from './pages/About'
 import Home from './pages/Home'
 import NotFound from './pages/NotFound'
+import User from './pages/User'
 function App() {
     return (
         <GithubProvider>
@@ -15,6 +16,7 @@ function App() {
                         <Navbar />
                         <main className='container mx-auto px-3 pb-12'>
                             <Routes>
+                                <Route path='/user/:login' element={<User/>}/>
                                 <Route path='/' element={<Home />} />
                                 <Route path='/about' element={<About />} />
                                 <Route path='/*' element={<NotFound />} />
