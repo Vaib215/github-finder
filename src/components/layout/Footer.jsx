@@ -1,5 +1,5 @@
 function Footer() {
-    const footerYear = new Date().getFullYear
+    const footerYear = new Date().getFullYear()
   return (
     <footer className="footer footer-center p-10 bg-gray-700 text-primary-content">
         <svg
